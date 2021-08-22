@@ -3,5 +3,5 @@
 #include <stdio.h>
 
 void foo() {
-	printf("foo\n");
+	printf("hola foo\n");
 }
