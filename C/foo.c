@@ -4,4 +4,5 @@
 
 void foo() {
 	printf("hola foo\n");
+	printf("mi hermano\n");
 }
