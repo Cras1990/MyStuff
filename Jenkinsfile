@@ -1,14 +1,14 @@
 pipeline {
     agent any
     options {
-        timeout(time: 1, unit: 'HOURS') 
+        timeout(time: 30, unit: 'SECONDS') 
     }
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building........'
 				sh 'make'
-				archiveArtifacts artifacts: '*.o', fingerprint: true
+				archiveArtifacts artifacts: '*.exe', fingerprint: true
             }
         }
     }
