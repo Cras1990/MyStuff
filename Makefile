@@ -10,4 +10,4 @@ prog: $(OBJ)
 .PHONY: clean
 
 clean:
-	del prog $(OBJ)
+	rm -rf *.o *.exe
