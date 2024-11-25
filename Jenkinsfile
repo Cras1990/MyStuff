@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo 'Building........'
 				sh 'make'
-				archiveArtifacts artifacts: '*.exe', fingerprint: true
+				archiveArtifacts artifacts: 'prog*', fingerprint: true
             }
         }
     }
